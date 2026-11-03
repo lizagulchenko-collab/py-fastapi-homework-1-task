@@ -25,4 +25,4 @@ class MovieListResponseSchema(BaseModel):
     prev_page: str | None = None
     next_page: str | None = None
     total_pages: int
-    total_items: intout
+    total_items: int

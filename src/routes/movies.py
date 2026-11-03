@@ -7,6 +7,7 @@ from schemas import MovieDetailResponseSchema, MovieListResponseSchema
 
 router = APIRouter()
 
+
 @router.get("/movies/", response_model=MovieListResponseSchema)
 async def get_movies(page: int = 1, per_page: int = 10, session: AsyncSession = Depends(get_db)):
     if page < 1:
